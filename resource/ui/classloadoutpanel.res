@@ -64,6 +64,7 @@
 			{
 				"use_item_rendertarget" "0"
 				"allow_rot"				"0"
+				"inventory_image_type"	"1"
 			}
 		}
 
@@ -89,78 +90,7 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 		}
 	}
-	
-	"RED"
-	{
-		"ControlName"		"CExImageButton"
-		"fieldName"			"ToggleToRED"
-		"xpos"				"c-86"
-		"ypos"				"66"
-		"zpos"				"30"
-		"wide"				"25"
-		"tall"				"12"
-		"autoResize"		"1"
-		"pinCorner"			"2"
-		"visible"			"1"
-		"enabled"			"1"
-		"tabPosition"		"0"
-		"labelText"			"RED"
-		"textAlignment"		"center"
-		"scaleImage"		"1"
-		"Command"			"sv_cheats 1; r_skin 0"
-		"paintborder"				"0"
-		"paintbackground"			"1"
-		"paintbackgroundtype"		"2"
-		"fgcolor"					"TanLight"
-		"defaultFgColor_override" 	"TanLight"
-		"armedFgColor_override" 	"TanLight"
-		"depressedFgColor_override"	"TanLight"
-		"selectedFgColor_override" 	"TanLight"
-		"bgcolor"					"189 59 60 255"
-		"defaultBgColor_override" 	"189 59 60 255"
-		"armedBgColor_override" 	"169 59 60 255"
-		"depressedBgColor_override" "189 59 60 255"
-		"selectedBgColor_override" 	"189 59 60 255"
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"sound_armed"		"UI/buttonrollover.wav"
-	}
-	"BLU"
-	{
-		"ControlName"		"CExImageButton"
-		"fieldName"			"ToggleToBLU"
-		"xpos"				"c+58"
-		"ypos"				"66"
-		"zpos"				"30"
-		"wide"				"25"
-		"tall"				"12"
-		"autoResize"		"1"
-		"pinCorner"			"2"
-		"visible"			"1"
-		"enabled"			"1"
-		"tabPosition"		"0"
-		"labelText"			"BLU"
-		"textAlignment"		"center"
-		"scaleImage"		"1"
-		"Command"			"sv_cheats 1; r_skin 1"
-		"paintborder"				"0"
-		"paintbackground"			"1"
-		"paintbackgroundtype"		"2"
-		"fgcolor"					"TanLight"
-		"defaultFgColor_override" 	"TanLight"
-		"armedFgColor_override" 	"TanLight"
-		"depressedFgColor_override" "TanLight"
-		"selectedFgColor_override" 	"TanLight"
-		"bgcolor_override"			"91 122 140 255"
-		"defaultBgColor_override" 	"91 122 140 255"
-		"armedBgColor_override" 	"71 102 120 255"
-		"depressedBgColor_override" "91 122 140 255"
-		"selectedBgColor_override" 	"91 122 140 255"
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"sound_armed"		"UI/buttonrollover.wav"
-	}
-	
+
 	"CaratLabel"
 	{
 		"ControlName"		"CExLabel"
@@ -265,7 +195,7 @@
 		"enabled"		"1"
 
 		"render_texture"	"0"
-		"fov"			"30"
+		"fov"				"30"
 		"allow_manip"		"1"
 
 		"model"
@@ -333,7 +263,7 @@
 		"fieldName"		"PassiveAttribsLabel"
 		"font"			"ItemFontAttribLarge"
 		"xpos"			"c-135"
-		"ypos"			"c-115"
+		"ypos"			"120"
 		"zpos"			"0"
 		"wide"			"270"
 		"tall"			"240"
@@ -580,6 +510,64 @@
 			"scaleImage"	"1"
 			"image"			"../hud/ico_reel"
 		}
+	}
+
+	"RedButton"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"RedButton"
+		"xpos"				"c-166"
+		"ypos"				"c-126"
+		"zpos"				"12"
+		"wide"				"25"
+		"tall"				"25"
+		"autoResize"		"1"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"labelText"			"R"
+		"textAlignment"		"center"
+		"font"				"HudFontMediumBold"
+		"scaleImage"		"1"
+		"command"			"sv_cheats 1;r_skin 0"
+		"paintbackground"	"1"
+
+		"defaultFgColor_override"	"HUDRedTeamSolid"
+		"armedFgColor_override"		"White"
+
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
+	}
+
+	"BlueButton"
+	{
+		"ControlName"		"CExImageButton"
+		"fieldName"			"BlueButton"
+		"xpos"				"c-166"
+		"ypos"				"c-99"
+		"zpos"				"12"
+		"wide"				"25"
+		"tall"				"25"
+		"autoResize"		"1"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"labelText"			"B"
+		"textAlignment"		"center"
+		"font"				"HudFontMediumBold"
+		"scaleImage"		"1"
+		"command"			"sv_cheats 1;r_skin 1"
+		"paintbackground"	"1"
+
+		"defaultFgColor_override"	"HUDBlueTeamSolid"
+		"armedFgColor_override"		"White"
+
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 	}
 
 	"TauntsExplanation"

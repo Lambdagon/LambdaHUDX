@@ -1,0 +1,12 @@
+
+------Credits--------
+
+-Lambdagon
+
+ Created this HUD
+ 
+-CriticalFlaw
+
+ TF2 HUD Fixes used as base 
+https://github.com/CriticalFlaw/TF2HUD.Fixes
+

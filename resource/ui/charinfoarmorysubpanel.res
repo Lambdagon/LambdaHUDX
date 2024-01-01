@@ -28,7 +28,7 @@
 		"thumbnails_y"			"60"
 		"thumbnails_delta_x"	"8"
 		"thumbnails_delta_y"	"8"
-
+		
 		"thumbnail_modelpanels_kv"
 		{
 			"ControlName"	"CItemModelPanel"
@@ -40,7 +40,7 @@
 			"noitem_textcolor"		"117 107 94 255"
 			"PaintBackgroundType"	"2"
 			"paintborder"	"0"
-
+			
 			"model_xpos"	"7"
 			"model_ypos"	"5"
 			"model_wide"	"58"
@@ -48,13 +48,14 @@
 			"text_ypos"		"60"
 			"text_center"	"1"
 			"name_only"		"1"
-
+			
 			"inset_eq_x"	"2"
 			"inset_eq_y"	"2"
-
+			
 			"itemmodelpanel"
 			{
 				"use_item_rendertarget" "0"
+				"inventory_image_type"	"1"
 				"allow_rot"				"0"
 			}
 		}
@@ -113,7 +114,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 	}
-
+	
 	"FilterComboBox"
 	{
 		"ControlName"		"ComboBox"
@@ -134,7 +135,7 @@
 		"maxchars"			"-1"
 		"NumericInputOnly"	"0"
 		"unicode"			"0"
-
+		
 		"fgcolor_override"	"235 226 202 255"
 		"bgcolor_override"	"51 47 46 255"
 		"disabledFgColor_override" "235 226 202 255"
@@ -143,7 +144,7 @@
 		"selectionTextColor_override" "235 226 202 255"
 		"defaultSelectionBG2Color_override" "51 47 46 255"
 	}
-
+	
 	"DataPanel"
 	{
 		"ControlName"	"EditablePanel"
@@ -186,9 +187,9 @@
 			"image_box"			"ArmoryScrollbarBox"
 		}
 	}
-
+	
 	"SelectedItemModelPanel"
-	{
+	{		
 		"ControlName"	"CItemModelPanel"
 		"fieldName"		"SelectedItemModelPanel"
 		"xpos"			"c25"
@@ -200,20 +201,20 @@
 		"bgcolor_override"		"0 0 0 0"
 		"PaintBackgroundType"	"2"
 		"paintborder"	"0"
-
+		
 		"model_hide"	"1"
 		"text_center"	"1"
 		"resize_to_text" "0"
-
+		
 		"itemmodelpanel"
 		{
 			"use_item_rendertarget" "0"
 			"inventory_image_type" "1"
 			"allow_rot"				"0"
 		}
-	}
+	}	
 	"SelectedItemImageModelPanel"
-	{
+	{		
 		"ControlName"	"CItemModelPanel"
 		"fieldName"		"SelectedItemImageModelPanel"
 		"xpos"			"c-280"		// Slightly right of center, because the photo background is
@@ -225,21 +226,21 @@
 		"bgcolor_override"		"0 0 0 0"
 		"PaintBackgroundType"	"2"
 		"paintborder"	"0"
-
+		
 		"model_ypos"	"10"
 		"model_tall"	"120"
 		"name_only"		"0"
 		"attrib_only"	"0"
 		"model_only"	"1"
 		"paint_icon_hide"	"1"
-
+		
 		"itemmodelpanel"
 		{
 			"use_item_rendertarget" "0"
 			"inventory_image_type" "1"
 			"allow_rot"				"0"
 		}
-	}
+	}	
 
 	"mouseoveritempanel"
 	{
@@ -255,17 +256,17 @@
 		"noitem_textcolor"		"117 107 94 255"
 		"PaintBackgroundType"	"2"
 		"paintborder"	"1"
-		
+
 		"text_center_x"		"1"
 		"model_hide"		"0"
 		"resize_to_text"	"1"
 		"padding_height"	"15"
 		"name_only"			"1"
-		
+
 		"model_ypos"	"15"
 		"model_wide"	"150"
 		"model_tall"	"100"
-		
+
 		"model_center_x"	"1"
 		"hide_collection_panel"		"1"
 
@@ -276,7 +277,7 @@
 			"allow_rot"				"0"
 		}
 	}
-
+	
 	"PrevPageButton"
 	{
 		"ControlName"	"CExButton"
@@ -299,8 +300,8 @@
 		"Command"		"prevpage"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
-	}
-
+	}		
+	
 	"CurPageLabel"
 	{
 		"ControlName"	"CExLabel"
@@ -319,7 +320,7 @@
 		"enabled"		"1"
 		"fgcolor_override" "200 80 60 255"
 	}
-
+	
 	"NextPageButton"
 	{
 		"ControlName"	"CExButton"
@@ -342,7 +343,7 @@
 		"Command"		"nextpage"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
-	}
+	}	
 
 	"WikiButton"
 	{
@@ -398,7 +399,7 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"StoreButton"
-		"xpos"			"c-300"
+		"xpos"			"c-295"
 		"ypos"			"290"
 		"zpos"			"20"
 		"wide"			"160"
@@ -439,6 +440,30 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"Command"		"reloadscheme"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+	}
+
+	"PrevPageShortcut"
+	{
+		"ControlName"		"CExButton"
+		"fieldName"			"PrevPageShortcut"
+		"wide"				"0"
+		"visible"			"1"
+		"labelText"			"&A"
+		"Command"			"prevpage"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+	}
+
+	"NextPageShortcut"
+	{
+		"ControlName"		"CExButton"
+		"fieldName"			"NextPageShortcut"
+		"wide"				"0"
+		"visible"			"1"
+		"labelText"			"&D"
+		"Command"			"nextpage"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}
