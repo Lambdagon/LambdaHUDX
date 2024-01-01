@@ -8,7 +8,7 @@
 		"name_width"	"57"
 		"horiz_inset"	"2"
 	}
-
+	
 	"RoundSignModel"
 	{
 		"ControlName"	"CModelPanel"
@@ -56,8 +56,8 @@
 				"sequence"		"outro"
 			}
 		}
-	}
-	
+	}	
+
 	"CountdownLabel"
 	{	
 		"ControlName"	"CExLabel"
@@ -193,20 +193,21 @@
 				"sequence"		"idle_closed"
 			}
 		}
-	}	
-
+	}
+	
 	"RoundCounter"
 	{
 		"fieldName"		"RoundCounter"
-		"xpos"			"cs-0.5"
+		"xpos"			"9999"
 		"ypos"			"-2"
 		"zpos"			"1"		
 		"wide"			"300"
 		"tall"			"100"
 		"visible"		"1"
 		"enabled"		"1"
-	}	
-
+		
+	}
+	
 	"BGFrame"
 	{
 		"ControlName"		"EditablePanel"
@@ -214,14 +215,13 @@
 		"xpos"				"cs-0.5"
 		"ypos"				"-5"
 		"zpos"				"0"
-		"wide"				"365"
-		"tall"				"28"
-		"visible"			"0"
+		"wide"				"0"
+		"tall"				"0"
 
 		"proportionaltoaparent"	"1"
 		"border"			"TFFatLineBorder"
 	}
-
+	
 	"RankUpLabel"
 	{	
 		"ControlName"	"CExLabel"
@@ -271,83 +271,45 @@
 	"ObjectiveStatusTimePanel"
 	{
 		"ControlName"		"EditablePanel"
-		"fieldName"			"ObjectiveStatusTimePanel"
-		"xpos"				"c-55"
-		"xpos_hidef"		"c-150"
-		"xpos_lodef"		"c-150"
-		"ypos"				"0"	[$WIN32]
-		"ypos_minmode"		"-14"	[$WIN32]
-		"ypos"				"24"	[$X360]
-		"zpos"				"2"
-		"wide"				"110"
-		"wide_hidef"		"300"
-		"wide_lodef"		"300"
-		"tall"				"150"
-		"visible"			"0"
-		"enabled"			"1"
-		"delta_item_x"			"22"	[$WIN32]
-		"delta_item_x"			"115"	[$X360]
-		"delta_item_start_y"	"50"
-		"delta_item_end_y"		"70"
-		"PositiveColor"			"0 255 0 255"
-		"NegativeColor"			"255 0 0 255"
-		"delta_lifetime"		"1.5"
-		"delta_item_font"		"HudFontMedium"
-
+		"fieldName"		"ObjectiveStatusTimePanel"
+		"xpos"			"c-30"
+		"ypos"			"0"	[$WIN32]
+		"zpos"			"4"
+		"wide"			"200"
+		"tall"			"480"
+		"visible"		"0"
+		"enabled"		"1"
+		"delta_item_x"		"52"	[$WIN32]
+		"delta_item_start_y"	"21"
+		"delta_item_end_y"	"21"
+		"PositiveColor"		"0 255 0 255"
+		"NegativeColor"		"255 0 0 255"
+		"delta_lifetime"	"1.3"
+		"delta_item_font"	"roboto18"
+		
 		if_match
 		{
-			"xpos"					"cs-0.5"
-			"wide"					"130"
-			"ypos_minmode"			"0"
-			"delta_item_x"			"35"
-			"delta_item_start_y"	"12"
-			"delta_item_end_y"		"50"
-			"PositiveColor"			"0 255 0 255"
-			"NegativeColor"			"255 0 0 255"
-			"delta_lifetime"		"1.5"
-			"delta_item_font"		"HudFontMediumSmall"
+			"ypos" "-20"
 		}
 		
 		"TimePanelValue"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"TimePanelValue"
-			"font"			"HudFontMediumSmall"
-			"font_minmode"	"HudFontSmall"
-			"font_lodef"	"HudFontMedium"
-			"fgcolor"		"TanLight"
-			"xpos"			"23"
-			"xpos_minmode"	"39"
-			"xpos_hidef"	"114"
-			"xpos_lodef"	"114"
-			"ypos"			"11"
-			"ypos_minmode"	"6"
-			"ypos_hidef"	"15"
-			"ypos_lodef"	"18"
+			"font"			"roboto16"
+			"fgcolor"		"255 255 255 255"
+			"xpos"			"10"
+			"ypos"			"20"
 			"zpos"			"3"
-			"wide"			"45"
-			"wide_minmode"	"30"
-			"wide_lodef"	"50"
-			"tall"			"31"
+			"wide"			"40"
+			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
-			"textAlignment"		"center"
+			"textAlignment"	"center"
 			"labelText"		"0:00"
-
-			if_match
-			{
-				"proportionaltoparent"	"1"
-
-				"xpos"			"cs-0.5"
-				"ypos"			"12"
-				"ypos_minmode"	"12"
-				"tall"			"10"
-				"font"			"HudFontSmall"
-				"font_minmode"	"HudFontSmall"
-				"font_lodef"	"HudFontSmall"
-			}
 		}	
 	}
+	
 	"TeamStatus"
 	{
 		"ControlName"	"CTFTeamStatus"
@@ -367,12 +329,12 @@
 		"12v12_gap"	"1"
 
 		"team1_grow_dir" "west"
-		"team1_base_x"	"c-50"
-		"team1_max_expand"	"200"
+		"team1_base_x"	"c-45"
+		"team1_max_expand"	"133"
 
 		"team2_grow_dir" "east"
-		"team2_base_x"	"c50"
-		"team2_max_expand"	"200"
+		"team2_base_x"	"c47"
+		"team2_max_expand"	"133"
 
 		"playerpanels_kv"
 		{
@@ -533,7 +495,7 @@
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"respawntime"
-				"font"			"HudFontSmall"
+				"font"			"PlayerPanelPlayerName"
 				"xpos"			"cs-0.5"
 				"ypos"			"0"
 				"zpos"			"5"
@@ -713,14 +675,14 @@
 			"ypos"			"38"
 			"zpos"			"1"
 			"wide"			"136"
-			"tall"			"175"
+			"tall"			"205"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"autoresize"	"3"
-			"linespacing"	"25"
-			"linegap"		"0"
+			"linespacing"	"26"
+			"linegap"		"4"
 			//"show_columns"	"1"
 
 			if_large
@@ -851,14 +813,14 @@
 			"ypos"			"38"
 			"zpos"			"1"
 			"wide"			"136"
-			"tall"			"175"
+			"tall"			"205"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"autoresize"	"3"
-			"linespacing"	"25"
-			"linegap"		"0"
+			"linespacing"	"26"
+			"linegap"		"4"
 			//"show_columns"	"1"
 
 			if_large

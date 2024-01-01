@@ -7,7 +7,7 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"1"
-		"wide"			"90"
+		"wide"			"101"
 		"tall"			"45"
 		"visible"		"0"
 		"enabled"		"0"
@@ -119,7 +119,7 @@
 		"enabled"		"1"
 		"textAlignment"	"south-east"		
 		"labelText"		"%Ammo%"
-		"fgcolor"		"FgcolorHL2"
+		"fgcolor"		"Orange"
 	}	
 
 	// Numbers disappear if the shadow element is removed
