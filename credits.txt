@@ -8,5 +8,9 @@
 -CriticalFlaw
 
  TF2 HUD Fixes used as base 
-https://github.com/CriticalFlaw/TF2HUD.Fixes
+ https://github.com/CriticalFlaw/TF2HUD.Fixes
 
+-MrCompoopter
+
+ No White Borders HUD 
+ https://gamebanana.com/mods/294682
